@@ -1,13 +1,53 @@
 # Auto-Stock
 ## Project Goal
-Stock recommendation, Automatic buy & sell program
+주식 종목 추천 & 자동 매수, 매도 프로그램 개발
 
 ## To-Do List
-- **Acquisition**: Data Crawling & Pre-Processing
-- **Analysis**: Process Data in API Format
-- **Visualization**: Web / GUI Programming
+- **Acquisition**: 데이터 수집 & 전처리
+- **Analysis**: API 형식으로 데이터 변환
+- **Visualization**: 웹 / GUI 프로그래밍
 
-## API Foramt
+## Description
+### 1. 종목 분석: 하루 누적 거래량 패턴 분석
+- 당일 기준 A일 이전까지의 데이터 호출
+- 전일 거래량 / 당일 거래량 B배 이상, 이하 종목 필터링
+- 시가 / 종가 비율 C% 이상, 이하 종목 필터링
+- A, B, C은 사용자의 입력값 Ex) A, B, C : 20일, 3배 이상, 5% 이상
+- 필터링된 종목 리스트화하여 GUI 및 CSV 파일로 출력
+- 리스트의 이름 클릭시 Naver 증권 해당 종목 URL 호출
+- 리스트의 체크박스 선택 시 다음날 자동매수 설정
+### API Foramt
 | Content | Description |
 | --- | --- |
-| time | 수집시각 |
+| date | 날짜 |
+| start | 시가 |
+| end | 종가 |
+| volume | 거래량 |
+
+### 2. 자동 매수: 분 단위 거래량 패턴 분석
+- <종목 분석>에서 체크박스 선택한 종목에 대한 모니터링
+- A분 이전 / 현재 거래량 B배 이상, 이하 종목 필터링
+- A분 이전 / 현재 가격 비율 C% 이상, 이하 종목 필터링
+- 필터링된 종목 D원만큼 현재가로 매수 주문
+- A, B, C, D는 사용자의 입력값 Ex) A, B, C : 10분, 3배 이상, 1% 이상, 50000원
+- 자동 매수 선택한 항목에 대한 확인, 수정 화면 필요
+### API Foramt
+| Content | Description |
+| --- | --- |
+| time | 시간 |
+| price | 가격 |
+| volume | 거래량 |
+
+### 3. 자동 매도: 분 단위 거래량 패턴 분석
+- 현재 보유하고 있는 모든 종목에 대한 모니터링
+- A분 이전 / 현재 거래량 B배 이상, 이하 종목 필터링
+- A분 이전 / 현재 가격 비율 C% 이상, 이하 종목 필터링
+- 필터링된 종목 D원만큼 현재가로 매도 주문
+- A, B, C, D는 사용자의 입력값 Ex) A, B, C : 10분, 3배 이상, 1% 이하, 50000원
+- 자동 매도 선택한 항목에 대한 확인, 수정 화면 필요
+### API Foramt
+| Content | Description |
+| --- | --- |
+| time | 시간 |
+| price | 가격 |
+| volume | 거래량 |
