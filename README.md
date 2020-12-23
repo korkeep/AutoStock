@@ -16,7 +16,7 @@
 - 필터링된 종목 리스트화하여 GUI 및 CSV 파일로 출력
 - 리스트의 이름 클릭시 Naver 증권 해당 종목 URL 호출
 - 리스트의 체크박스 선택 시 다음날 자동매수 설정
-### API Foramt
+### API Format
 | Content | Description |
 | --- | --- |
 | date | 날짜 |
