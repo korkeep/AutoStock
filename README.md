@@ -49,16 +49,13 @@
 | volume | 거래량 |
 
 ## How to Use?
-Step1: python3 설치
+- **Step1** python3 설치
 <https://www.python.org/downloads/>
-
-Step2: PyQT5, pandas 설치
+- **Step2** PyQT5, pandas 설치
 ```
 pip install pandas
 pip install pyqt5-tools
 ```
-
-Step3: 키움증권 OpenAPI+ 설치
+- **Step3** 키움증권 OpenAPI+ 설치
 <https://www3.kiwoom.com/nkw.templateFrameSet.do?m=m1408010600>
-
-Step4: pytrader.py 실행
+- **Step4** pytrader.py 실행
