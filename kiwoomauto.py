@@ -2,10 +2,7 @@
 키움 OpenApi+ 모듈을 업데이트하기 위해서 번개2를 실행했다가 종료시킨다.
 스케줄러에 등록해서 사용한다.
 
-author: 서경동
-last edit: 2017. 01. 10.
 """
-
 
 from pywinauto import application
 from pywinauto import timings

@@ -3,10 +3,7 @@ Kiwoom 클래스는 OCX를 통해 API 함수를 호출할 수 있도록 구현�
 OCX 사용을 위해 QAxWidget 클래스를 상속받아서 구현하였으며,
 주식(현물) 거래에 필요한 메서드들만 구현하였습니다.
 
-author: 서경동
-last edit: 2017. 02. 05
 """
-
 
 import sys
 import logging

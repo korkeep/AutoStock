@@ -1,10 +1,7 @@
 """
 QtDesigner로 만든 UI와 해당 UI의 위젯에서 발생하는 이벤트를 컨트롤하는 클래스
 
-author: 서경동
-last edit: 2017. 01. 18
 """
-
 
 import sys, time
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableWidget, QTableWidgetItem
