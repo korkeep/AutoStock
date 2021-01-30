@@ -14,7 +14,7 @@
 - 시가 / 종가 비율 C% 이상, 이하 종목 필터링
 - A, B, C은 사용자의 입력값 Ex) A, B, C : 20일, 2.5배 이상, 5.0% 이상
 - 필터링된 종목 다음날 자동매수 설정
-- **API Format**  
+**API Format**  
 | Content | Description |
 | --- | --- |
 | date | 날짜 |
@@ -28,7 +28,7 @@
 - A분봉 직전 / 현재 가격 비율 C% 이상 종목 필터링
 - 필터링된 종목 D원만큼 현재가로 매수 주문
 - A, B, C, D는 사용자의 입력값 Ex) A, B, C, D : 10분, 3.0배 이상, 0.5% 이상, 50000원
-- **API Format**  
+**API Format**  
 | Content | Description |
 | --- | --- |
 | time | 시간 |
@@ -41,7 +41,7 @@
 - A분봉 직전 / 현재 가격 비율 C% 이하 종목 필터링
 - 필터링된 종목 현재가로 전량 매도 주문
 - A, B, C, D는 사용자의 입력값 Ex) A, B, C, D : 15분, 2.0배 이상, 0.2% 이하
-- **API Format**  
+**API Format**  
 | Content | Description |
 | --- | --- |
 | time | 시간 |
